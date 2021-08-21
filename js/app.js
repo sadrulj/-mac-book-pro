@@ -34,9 +34,12 @@ function calculateTotal() {
     newGrandTotal = (totalPrice * 20) / 100;
     grandTotal = totalPrice - newGrandTotal;
     document.getElementById("grand-total").innerText = grandTotal;
+    // clean Input field
     userInput.value = "";
-    // console.log(grandTotal);
   } else {
+    // Error Handling
+    console.log("Invalid Promo Code!!!");
+    userInput.value = "";
   }
 }
 //handle memory events
@@ -66,6 +69,7 @@ document.getElementById("delivery-fast").addEventListener("click", function () {
   updateProduct("delivery", 20);
 });
 
+//handle Apply button for promo code
 document.getElementById("apply-btn").addEventListener("click", function () {
   calculateTotal();
 });
