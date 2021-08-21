@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailWindCss cdn link -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Mac-Book_Pro</title>
+    <title>Mac-Book-Pro</title>
 </head>
 
 <body>
@@ -25,46 +25,55 @@
                 </p>
                 <h4 class="mt-8 font-semibold">Memory</h4>
                 <div class="flex flex-wrap">
-                    <button class="hover:bg-gray-500 border-2 rounded-lg p-2">8GB unified memory</button>
-                    <button class="hover:bg-gray-500 border-2 rounded-lg p-2">16GB unified memory</button>
+                    <button id="memory-8gb" class="hover:bg-gray-500 border-2 rounded-lg p-2">8GB unified
+                        memory = 0</button>
+                    <button id="memory-16gb" class="hover:bg-gray-500 border-2 rounded-lg p-2">16GB unified
+                        memory = 180</button>
                 </div>
                 <h4 class="mt-8 font-semibold">Storage</h4>
                 <div>
-                    <button class="hover:bg-gray-500 border-2 rounded-lg p-2">256GB SSD storage</button>
-                    <button class="hover:bg-gray-500 border-2 rounded-lg p-2">512GB SSD storage</button>
-                    <button class="hover:bg-gray-500 border-2 rounded-lg p-2">1TB SSD storage</button>
+                    <button id="storage-256gb" class="hover:bg-gray-500 border-2 rounded-lg p-2">256GB SSD storage =
+                        0</button>
+                    <button id="storage-512gb" class="hover:bg-gray-500 border-2 rounded-lg p-2">512GB SSD storage =
+                        100</button>
+                    <button id="storage-1tb" class="hover:bg-gray-500 border-2 rounded-lg p-2">1TB SSD storage =
+                        180</button>
                 </div>
                 <h4 class="mt-8 font-semibold">Choose your delivery option</h4>
                 <div>
-                    <button class="hover:bg-gray-500 border-2 rounded-lg p-2">Friday, Aug 25 FREE Prime
-                        Delivery</button>
-                    <button class="hover:bg-gray-500 border-2 rounded-lg p-2">Friday, Aug 21 Delivery charge
-                        $20</button>
+                    <button id="delivery-free" class="hover:bg-gray-500 border-2 rounded-lg p-2">Friday, Aug 25 FREE
+                        Prime
+                        Delivery = 0</button>
+                    <button id="delivery-fast" class="hover:bg-gray-500 border-2 rounded-lg p-2">Friday, Aug 21
+                        Delivery charge
+                        $20 = 20</button>
                 </div>
                 <div class="grid grid-cols-4 mt-10">
                     <div class="ml-2">
                         <h5 class="border-b-2 py-2">Best Price</h5>
                         <h5 class="border-b-2 py-2">Extra Memory Cost</h5>
                         <h5 class="border-b-2 py-2">Extra Storage Cost</h5>
-                        <h5 class="border-b-2 py-2">Delivery charge</h5>
-                        <h5 class="border-b-4 border-gray-900 py-2">Total Price</h5>
+                        <h5 class="border-b-4 border-gray-900 py-2">Delivery charge</h5>
+                        <h5 class="border-b-2 py-2">Total Price</h5>
 
                     </div>
 
                     <div class="">
                         <h5 class="border-b-2 py-2 pl-24">$<span id="best-price">1299</span></h5>
-                        <h5 class="border-b-2 py-2 pl-24">$<span id="memory-cost">0</span></h5>
-                        <h5 class="border-b-2 py-2 pl-24">$<span id="stotage-cost">0</span></h5>
-                        <h5 class="border-b-2 py-2 pl-24">$<span id="delivery-charge">0</span></h5>
-                        <h5 class="border-b-4 border-gray-900 py-2 pl-24">$<span id="total-price">1299</span>
+                        <h5 class="border-b-2 py-2 pl-24">$<span id="memory-price">0</span></h5>
+                        <h5 class="border-b-2 py-2 pl-24">$<span id="storage-price">0</span></h5>
+                        <h5 class="border-b-4 border-gray-900 py-2 pl-24">$<span id="delivery-price">0</span></h5>
+                        <h5 class="border-b-2 py-2 pl-24">$<span id="total-price">1299</span>
                         </h5>
                     </div>
                 </div>
                 <div class="mt-4">
-                    <h4>Add Pomo code</h4>
+                    <h4>Add Promo code</h4>
                     <div class="flex flex-wrap">
-                        <input class="w-2/5 border-2 rounded-md pl-2" type="text">
-                        <button class="bg-red-500 hover:bg-red-700 rounded-md text-white py-2 px-4">Apply</button>
+                        <input id="promo-input" class="w-2/5 border-2 rounded-md pl-2" type="text"
+                            placeholder="Get 20% off on promo code">
+                        <button id="apply-btn"
+                            class="bg-red-500 hover:bg-red-700 rounded-md text-white py-2 px-4">Apply</button>
                     </div>
                 </div>
             </div>
@@ -74,7 +83,7 @@
         <hr>
         <div class="justify-center items-center text-4xl flex flex-wrap">
             <h4 class="mt-4">Total:</h4>
-            <h4 class="mt-4 ml-2">$<span>1299</span></h4>
+            <h4 class="mt-4 ml-2">$<span id="grand-total">1299</span></h4>
         </div>
     </section>
 
